@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Esankalp_TestIndex";
+}
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Content/Esankalp_Test.js"></script>
+
+<input type="hidden" id="hdnID" />
+
+Name:
+<input type="text" id="txtn" class="form-control" />
+Address:
+<input type="text" id="txtadd" class="form-control" />
+MobileNo:
+<input type="text" id="txtmno" class="form-control" />
+Email:
+<input type="text" id="txte" class="form-control" />
+Image:
+<input type="text" id="txti" class="form-control" />
+
+<input type="button" value="Submit" class="btn btn-success" onclick="SaveReg()" />
+
+<table id="tblReg" class=" table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>MobileNo</th>
+            <th>Email</th>
+            <th>Image</th>
+            <th>Delete</th>
+            <th>Edit</th>
+            <th>Detail</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<div id="Esankalp_TestModel" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container" id="Fdetail">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
